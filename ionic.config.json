@@ -1,0 +1,7 @@
+{
+    "name": "clientdotzip",
+    "integrations": {
+      "capacitor": {}
+    },
+    "type": "react"
+  }

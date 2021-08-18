@@ -1,0 +1,25 @@
+.messageSender{
+    position: absolute;
+    top: 0%;
+    height: 5%;
+    width: calc(100% - 75px);
+}
+
+.messageInputBox{
+    width: calc(100% - 70px);
+    color: #ffe3ff;
+    border-radius: 8px;
+    border-width: thin;
+    padding: auto;
+    background-color: #73717a;
+    
+}
+
+.messageSendButton{
+    width: calc(50px);
+}
+
+::placeholder{
+    color: #fcedfd;
+    opacity: 0.9;
+}

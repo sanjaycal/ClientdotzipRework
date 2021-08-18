@@ -1,0 +1,93 @@
+.message{
+  height: auto;
+  margin-bottom: -1vh;
+  position: relative;
+}
+
+.profilePicture{
+  border-radius: 50%;
+  height: 5vh;
+  left: 0ch;
+}
+
+.messageText{
+  margin: 0%;
+  color: #eedede;
+  word-break: break-all;
+  position: relative;
+  left: 6vh;
+  width: 75%;
+  bottom: 6vh;
+  margin-right: 0%;
+  font-size: 3vh;
+}
+
+.authorText{
+  margin: 0%;
+  color: #a2be9e;
+  word-wrap: break-word;
+  position: relative;
+  width: 60%;
+  bottom: 6vh;
+  left: 6vh;
+  height: 3%;
+}
+
+.messageImage{
+  max-height: 40vh;
+  max-width: 40vh;
+  margin: 0%;
+  color: #eedede;
+  word-break: break-all;
+  position: relative;
+  left: 6vh;
+  bottom: 6vh;
+  margin-right: 0%;
+  font-size: 3vh;
+}
+
+@media screen and (max-width: 50vh) {
+  .messageImage{
+    max-width: 80vw;
+    margin: 0%;
+    color: #eedede;
+    word-break: break-all;
+    position: relative;
+    left: 12vw;
+    bottom: 6vh;
+    margin-right: 0%;
+    font-size: 3vh;
+  }
+
+  .profilePicture{
+    border-radius: 50%;
+    height: 10vw;
+    left: 0ch;
+  }
+
+  .messageText{
+    margin: 0%;
+    color: #eedede;
+    word-break: break-all;
+    position: relative;
+    left: 12vw;
+    width: 75%;
+    bottom: 6vh;
+    margin-right: 0%;
+    font-size: 3vh;
+  }
+
+  .authorText{
+    margin: 0%;
+    color: #a2be9e;
+    word-wrap: break-word;
+    position: relative;
+    width: 60%;
+    bottom: 6vh;
+    left: 12vw;
+    height: 3%;
+  }
+}
+
+
+
