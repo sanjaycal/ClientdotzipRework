@@ -13,10 +13,14 @@ export default class SendMessage extends React.Component{
   sendMessage(){
     const mainref = firebase.database().ref("main/rooms/"+this.props.room+"/messages");
     const input = this.inputBox.current;
+    if(input.value.length<3000){
     if ((input.value.startsWith("http://")||input.value.startsWith("https://"))&&(input.value.endsWith(".jpg")||input.value.endsWith(".png"))){
       mainref.push({message:input.value, author:this.props.user, image:this.props.image, isImage: true});
     }else{
       mainref.push({message:input.value, author:this.props.user, image:this.props.image, isImage: false});
+    }
+    }else{
+      alert("message too long");
     }
     input.value = "";
   }
