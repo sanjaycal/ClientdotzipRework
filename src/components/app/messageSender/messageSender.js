@@ -13,7 +13,7 @@ export default class SendMessage extends React.Component{
   sendMessage(){
     const mainref = firebase.database().ref("main/rooms/"+this.props.room+"/messages");
     const input = this.inputBox.current;
-    if(input.value.length<3000){
+    if(input.value.length<3000 && input.value.length>=1){
     if ((input.value.startsWith("http://")||input.value.startsWith("https://"))&&(input.value.endsWith(".jpg")||input.value.endsWith(".png"))){
       mainref.push({message:input.value, author:this.props.user, image:this.props.image, isImage: true});
     }else{
@@ -28,7 +28,7 @@ export default class SendMessage extends React.Component{
   render(){
     return(
     <div className="messageSender">
-      <input type="text" placeholder="message" ref={this.inputBox} className="messageInputBox"/>
+      <input type="text" placeholder="message" ref={this.inputBox} className="messageInputBox" onKeyPress={(e) => e.key === 'Enter' && this.sendMessage()}/>
       <button onClick={() => this.sendMessage()} className="messageSendButton">Send</button>
     </div>
     );
