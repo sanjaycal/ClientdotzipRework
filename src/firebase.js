@@ -1,6 +1,7 @@
 import firebase from 'firebase/app'
 import "firebase/database";
 import 'firebase/auth';
+import "firebase/analytics";
 var config = {
     apiKey: "AIzaSyCfVajxuC8eMIHxgkIW3PH3x-025rXZCAo",
     authDomain: "clientdotzip1.firebaseapp.com",
